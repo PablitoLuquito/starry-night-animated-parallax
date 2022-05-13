@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  height: 150px;
+  background: linear-gradient(0, #120c56, #000000);
+}
+
+@keyframes anim-stars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
+
+.stars {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  /* prettier-ignore */
+  box-shadow: 50px 30px #fff,
+    100px 80px #fff,
+    80px 120px #fff,
+    300px 20px #fff,
+    250px 130px #fff,
+    200px 50px #fff,
+    150px 100px #fff,
+    320px 100px #fff;
+  animation: anim-stars 10s linear infinite;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  /* prettier-ignore */
+  box-shadow: 50px 30px #fff,
+    100px 80px #fff,
+    80px 120px #fff,
+    300px 20px #fff,
+    250px 130px #fff,
+    200px 50px #fff,
+    150px 100px #fff,
+    320px 100px #fff;
+}
+
+.stars2 {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  /* prettier-ignore */
+  box-shadow: 15px 15px #fff,
+    125px 35px #fff,
+    50px 80px #fff,
+    10px 120px #fff,
+    275px 90px #fff,
+    230px 10px #fff,
+    120px 130px #fff,
+    300px 130px #fff,
+    220px 115px #fff;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars2::after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  /* prettier-ignore */
+  box-shadow: 15px 15px #fff,
+    125px 35px #fff,
+    50px 80px #fff,
+    10px 120px #fff,
+    275px 90px #fff,
+    230px 10px #fff,
+    120px 130px #fff,
+    300px 130px #fff,
+    220px 115px #fff;
+}
